@@ -32,9 +32,9 @@
 		44C22A551DC096C1008B7311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44C22A581DC096C1008B7311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44C22A5A1DC096C1008B7311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C22A601DC096E1008B7311 /* 1.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.3gpp; path = ../../../../dwhelper/1.3gpp; sourceTree = "<group>"; };
-		44C22A621DC097A1008B7311 /* 2.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.3gpp; path = ../../../../dwhelper/2.3gpp; sourceTree = "<group>"; };
-		44C22A631DC097A1008B7311 /* 3.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3.3gpp; path = ../../../../dwhelper/3.3gpp; sourceTree = "<group>"; };
+		44C22A601DC096E1008B7311 /* 1.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.3gpp; sourceTree = "<group>"; };
+		44C22A621DC097A1008B7311 /* 2.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.3gpp; sourceTree = "<group>"; };
+		44C22A631DC097A1008B7311 /* 3.3gpp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.3gpp; sourceTree = "<group>"; };
 		44C22A661DC097CD008B7311 /* videos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videos.plist; sourceTree = "<group>"; };
 		44C22A691DC09C00008B7311 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		44C22A6A1DC09C00008B7311 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -344,6 +344,7 @@
 				44C22A5F1DC096C1008B7311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
