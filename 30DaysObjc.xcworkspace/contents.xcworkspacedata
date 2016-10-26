@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:04-SnapChatMenu/04-SnapChatMenu.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:03-PlayLocalVideo/03-PlayLocalVideo.xcodeproj">
    </FileRef>
    <FileRef
