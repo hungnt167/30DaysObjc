@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:03-PlayLocalVideo/03-PlayLocalVideo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:02-CustomFont/02-CustomFont.xcodeproj">
    </FileRef>
    <FileRef

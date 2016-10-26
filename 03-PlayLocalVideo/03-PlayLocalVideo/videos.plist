@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Hole Punch Flipbook #2 by Scott Blake</string>
+		<key>src</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Flick cartoon</string>
+		<key>src</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Hungry Android</string>
+		<key>src</key>
+		<string>3</string>
+	</dict>
+</array>
+</plist>
