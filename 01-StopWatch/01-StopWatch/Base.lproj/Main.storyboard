@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,18 +21,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ex-oO-CDm">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.10800514370203018" green="0.063514448702335358" blue="0.02685675211250782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <color key="textColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CH9-Hv-CrL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CH9-Hv-CrL">
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.65098039220000004" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CH9-Hv-CrL" secondAttribute="height" multiplier="2:1" id="QeV-Yw-IOV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="150"/>
                                 <state key="normal" title="Run">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clickBtnPlay" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiT-gf-1Ke"/>
@@ -41,7 +41,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T1-Pf-Jx4">
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Reset"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="150"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickBtnReset" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFM-Wa-o7Q"/>
                                 </connections>
@@ -49,17 +52,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="height" secondItem="CH9-Hv-CrL" secondAttribute="height" multiplier="1:2" id="AcE-B8-9FI"/>
-                            <constraint firstItem="2Ex-oO-CDm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Ezz-fA-HIM"/>
-                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="centerX" secondItem="CH9-Hv-CrL" secondAttribute="centerX" id="Hsd-6V-wlr"/>
-                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="width" secondItem="CH9-Hv-CrL" secondAttribute="width" multiplier="1:2" id="LTG-RT-ozt"/>
-                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="top" secondItem="2Ex-oO-CDm" secondAttribute="bottom" constant="50" id="UvL-lx-qCP"/>
-                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFo-0F-TVv"/>
-                            <constraint firstItem="2Ex-oO-CDm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iSD-kd-eiU"/>
-                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="top" secondItem="CH9-Hv-CrL" secondAttribute="bottom" constant="50" id="mip-NY-6fA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Ex-oO-CDm" secondAttribute="trailing" constant="10" id="xmd-KM-44D"/>
-                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="y3K-EZ-RqP"/>
-                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zmq-jz-QD0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1T1-Pf-Jx4" secondAttribute="bottom" id="3cQ-6l-EZB"/>
+                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="leading" secondItem="2Ex-oO-CDm" secondAttribute="leading" id="DKj-Qb-u41"/>
+                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="top" secondItem="2Ex-oO-CDm" secondAttribute="bottom" constant="10" id="Imp-se-xtS"/>
+                            <constraint firstItem="CH9-Hv-CrL" firstAttribute="trailing" secondItem="2Ex-oO-CDm" secondAttribute="trailing" id="SuU-Hz-kZb"/>
+                            <constraint firstItem="2Ex-oO-CDm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3" id="VEn-iF-yFr"/>
+                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="leading" secondItem="2Ex-oO-CDm" secondAttribute="leading" id="cN4-2d-XG7"/>
+                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="trailing" secondItem="2Ex-oO-CDm" secondAttribute="trailing" id="meV-4O-8HD"/>
+                            <constraint firstItem="1T1-Pf-Jx4" firstAttribute="top" secondItem="CH9-Hv-CrL" secondAttribute="bottom" id="mip-NY-6fA"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ex-oO-CDm" secondAttribute="trailing" id="oqb-mP-eU9"/>
+                            <constraint firstItem="2Ex-oO-CDm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v6O-Vc-Htp"/>
+                            <constraint firstItem="2Ex-oO-CDm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wlx-nH-wKP"/>
                         </constraints>
                     </view>
                     <connections>
