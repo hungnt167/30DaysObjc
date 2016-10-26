@@ -39,6 +39,9 @@
     [self.scrollView addSubview:centerVC.view];
     [centerVC didMoveToParentViewController:self];
 
+    [self.view layoutIfNeeded];
+
+    leftVC.view.frame = self.view.frame;
     CGRect centerFrame = self.view.frame;
     centerFrame.origin.x = self.view.frame.size.width;
     centerVC.view.frame = centerFrame;
