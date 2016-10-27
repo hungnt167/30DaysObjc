@@ -80,6 +80,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.textLabel.font = [UIFont systemFontOfSize:40];
     cell.textLabel.text = self.arr[indexPath.row];
     return cell;
 }
