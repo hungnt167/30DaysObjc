@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-cv-FFf">
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.65098039220000004" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="150"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Detect">
+                                    <color key="titleShadowColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnDetect" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntP-wf-nU3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyk-eF-Ok4">
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UYL-cv-FFf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="5d2-Iz-KCu"/>
+                            <constraint firstItem="UYL-cv-FFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GYY-Zk-U4v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UYL-cv-FFf" secondAttribute="bottom" id="T09-V8-smv"/>
+                            <constraint firstAttribute="trailing" secondItem="UYL-cv-FFf" secondAttribute="trailing" id="edu-j1-w1T"/>
+                            <constraint firstItem="pyk-eF-Ok4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iOv-lr-RNr"/>
+                            <constraint firstItem="pyk-eF-Ok4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jMq-FW-0ZS"/>
+                            <constraint firstItem="UYL-cv-FFf" firstAttribute="top" secondItem="pyk-eF-Ok4" secondAttribute="bottom" id="lvY-9t-pRV"/>
+                            <constraint firstAttribute="trailing" secondItem="pyk-eF-Ok4" secondAttribute="trailing" id="pQM-Ln-Ae7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnDetect" destination="UYL-cv-FFf" id="isN-kS-ydC"/>
+                        <outlet property="lbLocation" destination="pyk-eF-Ok4" id="no7-Ek-jSE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
