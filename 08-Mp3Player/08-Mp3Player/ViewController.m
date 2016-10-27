@@ -20,9 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // scan files
     self.arrAudio = [[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSBundle mainBundle] bundlePath]
                                                                         error:nil] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.mp3'"]];
     self.currentIndex = 0;
+
+    // active audio session
+    AVAudioSession *aVAudioSession = [AVAudioSession sharedInstance];
+    [aVAudioSession setActive:YES error:nil];
+    [aVAudioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+    // init gradient
     CAGradientLayer *layer = [CAGradientLayer layer];
 
 
@@ -41,6 +50,7 @@
 
     [self.vGradient.layer addSublayer:layer];
 
+    // update
     [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer *timer){
         layer.colors = @[(id)[self.class ranColor].CGColor, (id)[self.class ranColor].CGColor, (id)[self.class ranColor].CGColor, (id)[self.class ranColor].CGColor];
         if (self.player.isPlaying) {
@@ -75,8 +85,8 @@
 
     NSURL *url = [[NSBundle mainBundle] URLForResource:[self.arrAudio[self.currentIndex] stringByDeletingPathExtension] withExtension:[self.arrAudio[self.currentIndex] pathExtension]];
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    [[AVAudioSession sharedInstance] setActive:YES error:nil];
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+
 
     self.lbDurringTime.text = [self.class stringFromTimeInterval:self.player.duration];
     self.lbSongTitle.text = [self.arrAudio[self.currentIndex] capitalizedString];
