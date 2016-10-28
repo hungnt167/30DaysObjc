@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:10-VideoBackground/10-VideoBackground.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:09-ImageScroller/09-ImageScroller.xcodeproj">
    </FileRef>
    <FileRef

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video SplashCV-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VideoSplashCV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAV Corp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-QM-ycN">
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="40"/>
+                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-rJ-bsu">
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-Ai-Lyy">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xM-VS-QaS">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="height" secondItem="Rjh-QM-ycN" secondAttribute="height" id="1fc-JH-aKT"/>
+                            <constraint firstItem="Rjh-QM-ycN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1oD-f2-lV6"/>
+                            <constraint firstItem="9xM-VS-QaS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36F-QN-cqv"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="width" secondItem="9xM-VS-QaS" secondAttribute="width" id="5ia-g9-34B"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="top" secondItem="Rjh-QM-ycN" secondAttribute="bottom" constant="20" id="Eme-9a-sH1"/>
+                            <constraint firstItem="omd-rJ-bsu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIX-3A-YPK"/>
+                            <constraint firstItem="omd-rJ-bsu" firstAttribute="top" secondItem="9xM-VS-QaS" secondAttribute="bottom" constant="20" id="NHj-mx-dVG"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="height" secondItem="9xM-VS-QaS" secondAttribute="height" id="T5i-HW-nqd"/>
+                            <constraint firstItem="9xM-VS-QaS" firstAttribute="top" secondItem="rxm-Ai-Lyy" secondAttribute="bottom" constant="10" id="Td4-Jw-cH5"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="bsp-wm-yJT"/>
+                            <constraint firstItem="Rjh-QM-ycN" firstAttribute="width" secondItem="rxm-Ai-Lyy" secondAttribute="width" id="h76-Dd-q4n"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tUO-ab-cCS"/>
+                            <constraint firstItem="rxm-Ai-Lyy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAa-tL-DWO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
